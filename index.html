@@ -2,27 +2,238 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>BlueTigre</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BlueTigre — New markets for the chemicals you already make</title>
+<meta name="description" content="Bluetigre Consultants LLC. Rapid lead and business-case development for specialty chemicals, powered by the PROWL AI engine and 30+ years of chemical and business experience.">
+<link rel="icon" type="image/png" href="assets/tigre-sapphire-badge.png">
+<meta property="og:title" content="New markets for the chemicals you already make — or want to evaluate.">
+<meta property="og:description" content="Rapid lead and business-case development — using a novel custom agentic AI, the PROWL Engine, combined with deep chemical and business experience.">
+<meta property="og:image" content="https://bluetigre.com/assets/og-bluetigre.png">
+<meta property="og:url" content="https://bluetigre.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlueTigre">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="New markets for the chemicals you already make — or want to evaluate.">
+<meta name="twitter:description" content="Rapid lead and business-case development — using a novel custom agentic AI, the PROWL Engine, combined with deep chemical and business experience.">
+<meta name="twitter:image" content="https://bluetigre.com/assets/og-bluetigre.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  html,body{height:100%}
-  body{margin:0;background:#06090f;color:#dadde2;
-       font:16px/1.6 "Source Sans 3",Calibri,Arial,sans-serif;
-       display:flex;align-items:center;justify-content:center;text-align:center}
-  main{padding:32px;max-width:30rem}
-  h1{font-family:Montserrat,Arial,sans-serif;font-weight:700;font-size:22px;
-     letter-spacing:.14em;text-transform:uppercase;color:#7bbedc;margin:0 0 14px}
-  p{margin:0 0 8px;color:#919bad}
-  .addr{color:#dadde2}
+  :root{
+    --abyss:#06090f; --deep:#242d3c; --steel:#556177; --mist:#919bad; --spray:#dadde2;
+    --frost:#7bbedc; --electric:#55a0ca; --steel-lt:#7c95a7; --border:#2c3646;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--abyss); color:var(--spray); font-family:'Source Sans 3', Calibri, Arial, sans-serif; font-size:17px; line-height:1.55; }
+  h1,h2,h3,.wordmark,.kicker,.btn{ font-family:'Montserrat', Arial, sans-serif; }
+  a{ color:var(--frost); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+
+  /* nav */
+  nav{ position:sticky; top:0; z-index:10; background:rgba(6,9,15,.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--border); }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .brandrow{ display:flex; align-items:center; gap:12px; }
+  .badge{ width:36px; height:36px; border-radius:20%; }
+  .wordmark{ font-size:22px; font-weight:700; letter-spacing:.5px; color:#fff; }
+  .wordmark span{ color:var(--frost); }
+  nav ul{ list-style:none; display:flex; gap:26px; }
+  nav ul a{ color:var(--mist); font-size:15px; font-weight:600; }
+  nav ul a:hover{ color:var(--frost); text-decoration:none; }
+  @media (max-width:640px){ nav ul{ display:none; } }
+
+  /* hero */
+  .hero{ position:relative; overflow:hidden; min-height:680px; display:flex; align-items:center; }
+  .hero .img{ position:absolute; right:-4%; top:0; height:100%; aspect-ratio:1/1;
+    background:url('assets/tigre-sapphire-hero.jpg') center/cover no-repeat; opacity:.94; }
+  .hero .img::after{ content:''; position:absolute; inset:0;
+    background:linear-gradient(100deg, #06090f 0%, #06090f 18%, rgba(6,9,15,.6) 42%, rgba(6,9,15,0) 62%),
+               radial-gradient(ellipse at 62% 52%, rgba(6,9,15,0) 38%, rgba(6,9,15,.9) 76%, #06090f 100%); }
+  .hero .wrap{ position:relative; z-index:2; padding-top:72px; padding-bottom:72px; }
+  .hero h1{ font-size:clamp(34px, 5vw, 54px); font-weight:700; line-height:1.12; color:#fff; max-width:680px; }
+  .hero h1 em{ font-style:normal; color:var(--frost); }
+  .hero .lede{ margin-top:22px; font-size:clamp(17px, 2vw, 21px); line-height:1.5; color:var(--mist); max-width:520px; }
+  .hero .lede b{ color:var(--spray); font-weight:600; }
+  .rule{ width:120px; height:4px; background:var(--electric); margin:30px 0; }
+  .btn{ display:inline-block; padding:13px 24px; border-radius:6px; font-weight:600; font-size:15px; letter-spacing:.3px; }
+  .btn.primary{ background:var(--electric); color:#06090f; }
+  .btn.primary:hover{ background:var(--frost); text-decoration:none; }
+  .btn.ghost{ border:1px solid var(--steel); color:var(--spray); margin-left:12px; }
+  .btn.ghost:hover{ border-color:var(--frost); color:var(--frost); text-decoration:none; }
+  @media (max-width:640px){ .hero .img{ opacity:.55; right:-30%; } .btn.ghost{ margin:12px 0 0; } }
+
+  /* sections */
+  section{ padding:80px 0; border-top:1px solid var(--border); }
+  .kicker{ font-weight:600; font-size:13px; letter-spacing:2.5px; color:var(--frost); text-transform:uppercase; }
+  h2{ font-size:clamp(26px, 3.2vw, 36px); font-weight:700; color:#fff; margin-top:10px; line-height:1.2; max-width:760px; }
+  .intro{ margin-top:18px; font-size:19px; color:var(--mist); max-width:760px; }
+  .intro b{ color:var(--spray); font-weight:600; }
+  .grid{ display:grid; gap:22px; margin-top:40px; }
+  .grid.two{ grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); }
+  .grid.three{ grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); }
+  .card{ background:var(--deep); border:1px solid var(--border); border-radius:10px; padding:28px; }
+  .card h3{ font-size:19px; font-weight:700; color:#fff; }
+  .card h3 small{ display:block; font-family:'Source Sans 3', Calibri, Arial, sans-serif; font-weight:400; font-size:14px; color:var(--frost); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
+  .card p{ margin-top:12px; color:var(--mist); font-size:16px; }
+  .card p b{ color:var(--spray); font-weight:600; }
+  .num{ font-family:'Montserrat', Arial, sans-serif; font-weight:700; font-size:44px; color:var(--frost); line-height:1; }
+  .num + p{ margin-top:8px; }
+
+  /* case study */
+  .case{ background:var(--deep); border-left:4px solid var(--electric); border-radius:0 10px 10px 0; padding:28px 32px; margin-top:36px; }
+  .case p{ color:var(--mist); }
+  .case p b{ color:var(--spray); font-weight:600; }
+  .case ul{ margin:14px 0 0 20px; color:var(--mist); }
+  .case li{ margin-top:8px; }
+  .case li b{ color:var(--spray); font-weight:600; }
+
+  /* about */
+  .about{ display:grid; grid-template-columns:1fr; gap:36px; margin-top:32px; align-items:start; }
+  @media (min-width:800px){ .about{ grid-template-columns:1.4fr 1fr; } }
+  .about p{ color:var(--mist); margin-top:14px; }
+  .about p b{ color:var(--spray); font-weight:600; }
+  .facts{ background:var(--deep); border:1px solid var(--border); border-radius:10px; padding:24px 28px; }
+  .facts dt{ font-family:'Montserrat', Arial, sans-serif; font-weight:600; font-size:12px; letter-spacing:2px; color:var(--frost); text-transform:uppercase; margin-top:16px; }
+  .facts dt:first-child{ margin-top:0; }
+  .facts dd{ color:var(--spray); margin-top:4px; }
+
+  /* contact */
+  .contact .big{ font-family:'Montserrat', Arial, sans-serif; font-weight:700; font-size:clamp(22px, 3vw, 32px); color:#fff; margin-top:24px; }
+  .contact .big a{ color:var(--frost); }
+  .contact .lines{ margin-top:18px; color:var(--mist); line-height:1.8; }
+  .contact .lines b{ color:var(--spray); font-weight:600; }
+
+  footer{ border-top:1px solid var(--border); padding:28px 0 40px; font-size:13.5px; color:var(--steel-lt); }
+  footer b{ color:var(--mist); font-weight:600; }
+  footer .wrap{ display:flex; flex-wrap:wrap; gap:8px 28px; justify-content:space-between; }
 </style>
 </head>
 <body>
-<main>
-  <h1>BlueTigre</h1>
-  <p>Bluetigre Consultants LLC</p>
-  <p>The site is being updated and will be back shortly.</p>
-  <p class="addr">jim@bluetigre.com</p>
-</main>
+
+<nav>
+  <div class="wrap">
+    <a class="brandrow" href="#top" aria-label="BlueTigre home">
+      <img class="badge" src="assets/tigre-sapphire-badge.png" alt="">
+      <div class="wordmark">Blue<span>Tigre</span></div>
+    </a>
+    <ul>
+      <li><a href="#prowl">PROWL</a></li>
+      <li><a href="#what-you-get">What you get</a></li>
+      <li><a href="#case">Case study</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="img" role="img" aria-label="A sapphire-blue jaguar on black"></div>
+  <div class="wrap">
+    <h1>New markets for the chemicals you <em>already make</em> — or want to evaluate.</h1>
+    <p class="lede"><b>Rapid lead and business-case development</b> — using a novel custom agentic AI, the <b>PROWL Engine</b>, combined with deep chemical and business experience.</p>
+    <div class="rule"></div>
+    <a class="btn primary" href="#prowl">How PROWL works</a>
+  </div>
+</header>
+
+<section id="prowl">
+  <div class="wrap">
+    <div class="kicker">PROWL · a new AI business-development engine</div>
+    <h2>The AI does the reading. A person makes every judgement.</h2>
+    <p class="intro">PROWL — <b>Pattern Recognition Of White-space Leads</b> — is a trained agentic AI that finds new markets for a chemical a company already makes or wants to evaluate, then tests whether each one is real, worth pursuing and winnable. Weeks of desk research become days. Every fact carries its source and date.</p>
+    <div class="grid two">
+      <div class="card">
+        <h3><small>Stage 1</small>Discover — find the opportunities</h3>
+        <p>PROWL is given the chemical's identity and your current product lines. It reads <b>eight kinds of public source</b> — use databases, regulators, patents, scientific literature and the open web — and turns every documented use into a record with its evidence attached.</p>
+        <p>Uses are grouped into markets by a <b>custom ontology</b> built in your company's own business language. Markets you already serve are set aside. What remains is a ranked list of genuinely new opportunities.</p>
+      </div>
+      <div class="card">
+        <h3><small>Stage 2</small>Qualify — build the business case</h3>
+        <p>Each opportunity must answer three questions: <b>Is it real? Is it worth it? Can we win?</b> PROWL works through named public sources — free before paid — and writes every fact down with its source and date.</p>
+        <p>The AI drafts each conclusion; <b>a person reviews and approves it</b> before it goes anywhere. Approved conclusions feed a SWOT, a client-ready report and a pitch presentation, so every number you see traces back to a source.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="what-you-get">
+  <div class="wrap">
+    <div class="kicker">What you get</div>
+    <h2>Leads, the business case, and a library your company keeps.</h2>
+    <div class="grid three">
+      <div class="card">
+        <h3>A ranked list of new markets</h3>
+        <p>Genuinely new opportunities for your chemical — the markets you don't serve today, ranked by the weight of evidence behind each one, with every source shown.</p>
+      </div>
+      <div class="card">
+        <h3>The business case for the ones that matter</h3>
+        <p>Is it real, is it worth it, can we win — answered from named sources, with the go-to-market strategy you can act on and the questions still open stated plainly.</p>
+      </div>
+      <div class="card">
+        <h3>Intelligence that compounds</h3>
+        <p>Every engagement grows a permanent, sourced library of market facts and insights in your company's own ontology — <b>business and sales intelligence your company keeps.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="case">
+  <div class="wrap">
+    <div class="kicker">Case study</div>
+    <h2>81 candidate markets, 39 the client already served — and the top-ranked lead was wrong.</h2>
+    <div class="grid three">
+      <div class="card"><div class="num">81</div><p>candidate markets found for one established chemical</p></div>
+      <div class="card"><div class="num">39</div><p>markets the client already served, subtracted automatically before ranking</p></div>
+      <div class="card"><div class="num">1</div><p>week from first run to a sourced go-to-market foundation, with the gaps named</p></div>
+    </div>
+    <div class="case">
+      <p>The board's number-one lead was refrigeration systems. PROWL then read its own evidence back and rejected it: every document described the client's existing refrigeration-lubricant business seen from the equipment end. Not white space — the same business under a different name. It did the same to the runner-up before promoting it. What remained was a real one qualified against three questions. <b>Is it real?</b> Yes, for the chemistry — this exact family is already sold commercially, which proves the application rather than predicting it. Unproven for the client's own grade, and the report says so. <b>Is it worth it?</b> The demand signal is register-verified, not brochure-claimed: official US volumes for both the molecule and its family more than doubled since 2020, while imports of the family's trade basket fell 41% — import substitution visible in two independent official sources. <b>Can we win?</b> The regulatory file is clean on both sides of the Atlantic, with three new EU registrants since 2022 saying the family is growing. The incumbents, the patents and the bio-based label currently sit with others — so the window is measured in filings per year, and the report says what closing it takes. A week to a sourced foundation — and, as importantly, two leads killed with reasons on the record. Every figure traces to its source, and nothing reached the client that a person had not approved.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="kicker">About</div>
+    <h2>Built by a chemist with 30 years of chemical-industry experience — technology, product management, sales and marketing, and business development.</h2>
+    <div class="about">
+      <div>
+        <p>I spent 30+ years in specialty chemicals at ExxonMobil and Lubrizol — R&amp;D, business development and innovation leadership, with 10 patents along the way. Now I run <b>Bluetigre Consultants LLC</b>, and I built the thing I always wanted as a BD leader: an AI engine that does the reading.</p>
+        <p>PROWL reads at machine speed and writes every fact down with its source. I make the judgements, with you. Nothing rests on one search or one person's memory, and nothing reaches you that a person hasn't approved.</p>
+        <p>If you make or distribute specialty chemicals and want to know where else they could sell — let's talk.</p>
+      </div>
+      <dl class="facts">
+        <dt>Principal</dt><dd>Dr. James S. Puckace (Jim)</dd>
+        <dt>Role</dt><dd>Founder · Creator of the PROWL AI Engine</dd>
+        <dt>Background</dt><dd>Ph.D. Chemistry · 30+ years ExxonMobil &amp; Lubrizol · 10 patents</dd>
+        <dt>Services</dt><dd>Market research · Business-case development · Business &amp; management consulting for specialty chemicals</dd>
+        <dt>Based</dt><dd>Okatie, South Carolina · works remotely, worldwide</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Where else could your chemicals sell?</h2>
+    <div class="big">jim@bluetigre.com</div>
+    <div class="lines">
+      <b>Dr. James S. Puckace (Jim)</b> · Founder, Bluetigre Consultants LLC<br>
+      571-276-9104 · Okatie, South Carolina<br>
+      <a href="https://www.linkedin.com/in/jimpuckace" rel="noopener">LinkedIn: jimpuckace</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Bluetigre Consultants LLC</b> · Okatie, South Carolina · jim@bluetigre.com</div>
+    <div>BlueTigre and PROWL are trade names of Bluetigre Consultants LLC.</div>
+  </div>
+</footer>
+
 </body>
 </html>
