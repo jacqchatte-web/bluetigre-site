@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The ontology — a market means what your sales team means | BlueTigre</title>
-<meta name="description" content="An ontology maps applications in your company's own vocabulary, so markets are grouped your way, your served business is subtractable, and knowledge compounds.">
+<title>The ontology — PROWL fitted to how your company works | BlueTigre</title>
+<meta name="description" content="A three-layer ontology in your own vocabulary, plus the code and sources adjusted per engagement. A market means what your sales team means by it.">
 <link rel="canonical" href="https://bluetigre.com/ontology/">
 <link rel="icon" type="image/png" href="../assets/tigre-sapphire-badge.png">
-<meta property="og:title" content="The ontology — a market means what your sales team means | BlueTigre">
-<meta property="og:description" content="An ontology maps applications in your company's own vocabulary, so markets are grouped your way, your served business is subtractable, and knowledge compounds.">
+<meta property="og:title" content="The ontology — PROWL fitted to how your company works | BlueTigre">
+<meta property="og:description" content="A three-layer ontology in your own vocabulary, plus the code and sources adjusted per engagement. A market means what your sales team means by it.">
 <meta property="og:image" content="https://bluetigre.com/assets/og-bluetigre.png">
 <meta property="og:url" content="https://bluetigre.com/ontology/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BlueTigre">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The ontology — a market means what your sales team means | BlueTigre">
-<meta name="twitter:description" content="An ontology maps applications in your company's own vocabulary, so markets are grouped your way, your served business is subtractable, and knowledge compounds.">
+<meta name="twitter:title" content="The ontology — PROWL fitted to how your company works | BlueTigre">
+<meta name="twitter:description" content="A three-layer ontology in your own vocabulary, plus the code and sources adjusted per engagement. A market means what your sales team means by it.">
 <meta name="twitter:image" content="https://bluetigre.com/assets/og-bluetigre.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,15 +112,23 @@
           "name": "What is a PROWL ontology?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "An ontology is a map of applications written in your company's own vocabulary, used to group individual documented uses into markets. It means a market is defined the way your sales team defines it, rather than the way a chemical database happens to categorise it."
+            "text": "A map of applications written in your company's own vocabulary, used to group documented uses into markets. It runs in three layers: a shared layer of canonical market names, a per-material layer covering what a given substance is and the false friends that look like it, and a per-client layer holding how your company says things - your segment names, your words for what you already sell, your brands and divisions."
           }
         },
         {
           "@type": "Question",
-          "name": "Why does the vocabulary matter for finding new markets?",
+          "name": "Why does a company's own vocabulary matter?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Because markets you already serve have to be subtractable before anything is ranked. If the vocabulary does not match how your business describes itself, your own existing business comes back to you as a discovery, and the genuinely new opportunities are buried under it."
+            "text": "Because a company's segment labels describe where its catalogue files a product, while a chemical vocabulary describes what the substance does. They are different things, and the mapping between them is knowledge about your company specifically. Without it, markets you already serve are handed back to you as discoveries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a client's own systems and data be connected?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, as engineering work done for that engagement. The vocabulary, the served baseline, the exclusions and the brand and division names are configuration - they live in a versioned file and changing them does not touch the engine. Connecting an internal product database, document store or subscription feed is a code change made for that client. There is no self-service connector today."
           }
         },
         {
@@ -128,7 +136,7 @@
           "name": "Is the ontology versioned?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Every change is proposed, reviewed against the evidence, and logged with a date and with whose decision it was. On one engagement it stood at revision 19. You can always see what moved, when, and on whose say-so."
+            "text": "Yes. Every change is proposed, reviewed against the evidence and logged with a date and with whose decision it was. Every entry also carries where the wording came from, so nothing is applied blind. On one engagement it stood at revision 19."
           }
         }
       ]
@@ -153,28 +161,44 @@
 <div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li>The ontology</li></ol></nav></div>
 <div class="pagehead">
   <div class="wrap">
-    <div class="kicker">The knowledge store</div>
+    <div class="kicker">Fitted to your company</div>
     <h1>A market means what <em>your sales team</em> means by it.</h1>
-    <p class="lede">Uses are grouped into markets through an <b>ontology</b> — a map of applications written in your company's own vocabulary, not a chemical database's categories. It is the quiet piece of the engine, and it is the reason the second chemistry is easier than the first.</p>
+    <p class="lede">PROWL is not a product you are handed. The vocabulary, the engine and the sources are <b>adjusted to your business</b> — because a chemical vocabulary describes what a substance does, and your company's vocabulary describes where the catalogue files it. Mapping between the two is knowledge about your company specifically, and it is the difference between a useful list and a list of things you already sell.</p>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <div class="kicker">Why it exists</div>
-    <h2>A database's category is not your category.</h2>
-    <p class="intro">A registry might file a use under "industrial lubricants". Your business might call the same thing three different things, sell two of them, and have no interest in the third. If the grouping does not match how you actually describe your business, two things go wrong at once.</p>
+    <div class="kicker">Three layers</div>
+    <h2>Shared, per-material, and yours.</h2>
+    <p class="intro">Each company has its own way of saying and doing things, so the vocabulary is built in layers rather than as one dictionary. Your layer sits on top, and <b>where it disagrees with the shared one, yours wins</b> — and the record says that it overrode it.</p>
+    <div class="grid three">
+      <div class="card"><h3><small>Layer 1</small>Shared</h3><p>The universal vocabulary of application domains and canonical market names. Written once, applied to every study.</p></div>
+      <div class="card"><h3><small>Layer 2</small>Per-material</h3><p>Who this chemical <b>is</b>: its search terms, and the false friends — the near-identical names that would otherwise pollute every result.</p></div>
+      <div class="card"><h3><small>Layer 3</small>Yours</h3><p>How your company says things: your segment names mapped onto canonical markets, your own words for what you already sell, your brands and divisions, and the false friends that only bite in your context.</p></div>
+    </div>
+    <div class="fact"><div class="q">Why can't one vocabulary serve every company?</div><div class="a">Because a company&rsquo;s segment labels say where its catalogue files a product, and a chemical vocabulary says what the substance does. Map a producer&rsquo;s own shelf labels onto a board of candidate markets and they may subtract almost nothing, not because the board is wrong but because the two vocabularies are describing different things. One client&rsquo;s shelf label is also meaningless to the next, which is why your layer lives in your own file and never in the shared one.</div><div class="src">The per-client layer was added on 27 August 2026, after exactly that happened.</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Your systems</div>
+    <h2>Plug in your own sources, and adjust the engine to your workflow.</h2>
+    <p class="intro">The public record is the starting point, not the boundary. An engagement can bring in your own material — an internal product database, a document store, a subscription feed you already pay for — so that the exploration runs against what your company knows as well as what the world publishes.</p>
     <div class="grid two">
       <div class="card">
-        <h3>Your own business comes back as a discovery</h3>
-        <p>Markets you already serve have to be <b>subtractable</b> before anything is ranked. In one engagement 39 of 81 candidate markets were already served and were removed automatically. Without a vocabulary that matches yours, those 39 would have been handed back to you as findings.</p>
+        <h3>What is configuration</h3>
+        <p>Your vocabulary, your served baseline, your exclusions, your brands and divisions. These live in a versioned file. Changing them does not touch the engine, and every entry records where the wording came from, so <b>nothing is applied blind</b>.</p>
       </div>
       <div class="card">
-        <h3>The genuinely new gets buried</h3>
-        <p>What remains after the subtraction is the point of the whole exercise. If the grouping is wrong, the real white space sits underneath a pile of things you already do, and nobody reads that far down.</p>
+        <h3>What is engineering</h3>
+        <p>Connecting your own systems, and adjusting the code to fit how your company actually works. That is <b>real work done for your engagement</b>, not a switch. It is also why the second chemistry is cheaper than the first — the fitting is done once.</p>
       </div>
     </div>
-    <div class="fact"><div class="q">What is a PROWL ontology?</div><div class="a">A map of applications written in your company&rsquo;s own vocabulary, used to group individual documented uses into markets. A market is defined the way your sales team defines it, rather than the way a chemical database happens to categorise it.</div><div class="src">It is built during the engagement and corrected by you. It is yours.</div></div>
+    <div class="case">
+      <p><b>What that is not, today.</b> There is no self-service connector you configure yourself, and PROWL does not read your systems without you deciding what it may see. Saying otherwise would be an overclaim, and the honesty is the point — <b>a finding you cannot check is a finding you should not act on</b>, and that applies to claims about the engine as much as to claims about a market.</p>
+    </div>
   </div>
 </section>
 
@@ -182,7 +206,7 @@
   <div class="wrap">
     <div class="kicker">How it is governed</div>
     <h2>Versioned, reviewed, and logged with whose decision it was.</h2>
-    <p class="intro">An ontology that anyone can quietly edit is worth nothing, because you can never tell whether a result changed for a good reason. So every change is <b>proposed, reviewed against the evidence, and logged with a date</b>. On one engagement it stood at revision 19.</p>
+    <p class="intro">A vocabulary anyone can quietly edit is worth nothing, because you can never tell whether a result changed for a good reason. So every change is <b>proposed, reviewed against the evidence, and logged with a date</b>. On one engagement it stood at revision 19.</p>
     <div class="grid three">
       <div class="card"><h3>Proposed</h3><p>A change is suggested, with the evidence that prompted it attached.</p></div>
       <div class="card"><h3>Reviewed</h3><p>Checked against that evidence by a person, not applied because a machine suggested it.</p></div>
@@ -217,8 +241,8 @@
   <div class="wrap">
     <div class="kicker">Why it compounds</div>
     <h2>The second chemistry is easier than the first.</h2>
-    <p class="intro">The vocabulary and the served baseline carry forward. Nothing has to be rebuilt to start the next product, which is what turns adjacent-market work from a programme into <a href="../adjacent-growth/">a cadence you can sustain</a>.</p>
-    <div class="fact"><div class="q">What compounds, and what does not?</div><div class="a">The evidence and the vocabulary compound. The judgement does not. Every gate still needs a person to decide it, and the last one still needs a signature — so the engine gets easier to run and sharper each cycle without ever becoming more able to choose.</div><div class="src">A sourced library your company keeps. It does not depreciate.</div></div>
+    <p class="intro">The vocabulary, the served baseline and the fitting all carry forward. Nothing has to be rebuilt to start the next product, which is what turns adjacent-market work from a project into <a href="../adjacent-growth/">a workflow you can sustain</a>.</p>
+    <div class="fact"><div class="q">What compounds, and what does not?</div><div class="a">The evidence, the vocabulary and the fitting compound. The judgement does not. Every gate still needs a person to decide it, and the last one still needs a signature — so the engine gets easier to run and sharper each cycle without ever becoming more able to choose.</div><div class="src">A sourced library your company keeps. It does not depreciate.</div></div>
   </div>
 </section>
 
