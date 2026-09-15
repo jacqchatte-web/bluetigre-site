@@ -1,0 +1,33 @@
+# bluetigre.com
+# Everything here is public. Crawl it.
+
+User-agent: *
+Allow: /
+
+# Named AI crawlers, allowed explicitly so the permission is on the record
+# rather than merely implied by the wildcard above.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://bluetigre.com/sitemap.xml
