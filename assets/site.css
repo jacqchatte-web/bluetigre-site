@@ -1,0 +1,166 @@
+/* BlueTigre — LIQUID mode. One stylesheet for every page.
+   Extracted from the original single-page site so the browser caches it once
+   instead of re-downloading the same rules on every page. */
+
+:root{
+  --abyss:#06090f; --deep:#242d3c; --steel:#556177; --mist:#919bad; --spray:#dadde2;
+  --frost:#7bbedc; --electric:#55a0ca; --steel-lt:#7c95a7; --border:#2c3646;
+}
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{ background:var(--abyss); color:var(--spray);
+  font-family:'Source Sans 3', Calibri, Arial, sans-serif; font-size:17px; line-height:1.55; }
+h1,h2,h3,.wordmark,.kicker,.btn{ font-family:'Montserrat', Arial, sans-serif; }
+a{ color:var(--frost); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+img{ max-width:100%; }
+.wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+.skip{ position:absolute; left:-9999px; }
+.skip:focus{ left:16px; top:10px; z-index:50; background:var(--electric); color:#06090f;
+  padding:10px 16px; border-radius:6px; font-weight:600; }
+
+/* ---- nav -------------------------------------------------------------- */
+nav{ position:sticky; top:0; z-index:10; background:rgba(6,9,15,.92);
+  backdrop-filter:blur(6px); border-bottom:1px solid var(--border); }
+nav .wrap{ display:flex; align-items:center; justify-content:space-between; min-height:64px; }
+.brandrow{ display:flex; align-items:center; gap:12px; }
+.badge{ width:36px; height:36px; border-radius:20%; }
+.wordmark{ font-size:22px; font-weight:700; letter-spacing:.5px; color:#fff; }
+.wordmark span{ color:var(--frost); }
+nav ul{ list-style:none; display:flex; gap:26px; }
+nav ul a{ color:var(--mist); font-size:15px; font-weight:600; }
+nav ul a:hover{ color:var(--frost); text-decoration:none; }
+nav ul a[aria-current="page"]{ color:var(--frost); }
+/* Phones used to get NO navigation at all - the link list was hidden and
+   nothing replaced it. Now it wraps onto a second row instead. */
+@media (max-width:760px){
+  nav .wrap{ flex-wrap:wrap; padding-top:10px; padding-bottom:6px; }
+  .brandrow{ width:100%; }
+  nav ul{ width:100%; flex-wrap:wrap; gap:0 20px; padding:6px 0 8px;
+    border-top:1px solid var(--border); margin-top:8px; }
+  nav ul a{ display:block; padding:8px 0; font-size:15px; }
+}
+
+/* ---- hero ------------------------------------------------------------- */
+.hero{ position:relative; overflow:hidden; min-height:680px; display:flex; align-items:center; }
+.hero .img{ position:absolute; right:-4%; top:0; height:100%; aspect-ratio:1/1;
+  background:url('tigre-sapphire-hero.jpg') center/cover no-repeat; opacity:.94; }
+.hero .img::after{ content:''; position:absolute; inset:0;
+  background:linear-gradient(100deg, #06090f 0%, #06090f 18%, rgba(6,9,15,.6) 42%, rgba(6,9,15,0) 62%),
+             radial-gradient(ellipse at 62% 52%, rgba(6,9,15,0) 38%, rgba(6,9,15,.9) 76%, #06090f 100%); }
+.hero .wrap{ position:relative; z-index:2; padding-top:72px; padding-bottom:72px; }
+.hero h1{ font-size:clamp(34px, 5vw, 54px); font-weight:700; line-height:1.12; color:#fff; max-width:680px; }
+.hero h1 em{ font-style:normal; color:var(--frost); }
+.hero .lede{ margin-top:22px; font-size:clamp(17px, 2vw, 21px); line-height:1.5; color:var(--mist); max-width:520px; }
+.hero .lede b{ color:var(--spray); font-weight:600; }
+@media (max-width:640px){ .hero{ min-height:520px; } .hero .img{ opacity:.5; right:-30%; } }
+
+/* inner-page header — same language as the hero, a fraction of the height */
+.pagehead{ padding:64px 0 52px; border-bottom:1px solid var(--border);
+  background:linear-gradient(180deg, #0b1220 0%, var(--abyss) 100%); }
+.pagehead h1{ font-size:clamp(30px, 4.2vw, 44px); font-weight:700; color:#fff;
+  line-height:1.15; max-width:820px; margin-top:12px; }
+.pagehead h1 em{ font-style:normal; color:var(--frost); }
+.pagehead .lede{ margin-top:20px; font-size:19px; color:var(--mist); max-width:740px; }
+.pagehead .lede b{ color:var(--spray); font-weight:600; }
+
+.rule{ width:120px; height:4px; background:var(--electric); margin:30px 0; }
+.btn{ display:inline-block; padding:13px 24px; border-radius:6px; font-weight:600;
+  font-size:15px; letter-spacing:.3px; }
+.btn.primary{ background:var(--electric); color:#06090f; }
+.btn.primary:hover{ background:var(--frost); text-decoration:none; }
+.btn.ghost{ border:1px solid var(--steel); color:var(--spray); margin-left:12px; }
+.btn.ghost:hover{ border-color:var(--frost); color:var(--frost); text-decoration:none; }
+@media (max-width:640px){ .btn.ghost{ margin:12px 0 0; } }
+
+/* ---- breadcrumb ------------------------------------------------------- */
+.crumb{ font-size:13.5px; color:var(--steel-lt); padding-top:26px; }
+.crumb ol{ list-style:none; display:flex; flex-wrap:wrap; gap:8px; }
+.crumb li::after{ content:'›'; margin-left:8px; color:var(--steel); }
+.crumb li:last-child::after{ content:''; }
+.crumb a{ color:var(--mist); }
+
+/* ---- sections --------------------------------------------------------- */
+section{ padding:80px 0; border-top:1px solid var(--border); }
+section:first-of-type{ border-top:none; }
+.kicker{ font-weight:600; font-size:13px; letter-spacing:2.5px; color:var(--frost); text-transform:uppercase; }
+h2{ font-size:clamp(26px, 3.2vw, 36px); font-weight:700; color:#fff; margin-top:10px; line-height:1.2; max-width:760px; }
+.intro{ margin-top:18px; font-size:19px; color:var(--mist); max-width:760px; }
+.intro b{ color:var(--spray); font-weight:600; }
+.grid{ display:grid; gap:22px; margin-top:40px; }
+.grid.two{ grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); }
+.grid.three{ grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); }
+.card{ background:var(--deep); border:1px solid var(--border); border-radius:10px; padding:28px; }
+.card h3{ font-size:19px; font-weight:700; color:#fff; }
+.card h3 small{ display:block; font-family:'Source Sans 3', Calibri, Arial, sans-serif;
+  font-weight:400; font-size:14px; color:var(--frost); letter-spacing:1px;
+  text-transform:uppercase; margin-bottom:6px; }
+.card p{ margin-top:12px; color:var(--mist); font-size:16px; }
+.card p b{ color:var(--spray); font-weight:600; }
+.num{ font-family:'Montserrat', Arial, sans-serif; font-weight:700; font-size:44px; color:var(--frost); line-height:1; }
+.num + p{ margin-top:8px; }
+
+.case{ background:var(--deep); border-left:4px solid var(--electric);
+  border-radius:0 10px 10px 0; padding:28px 32px; margin-top:36px; }
+.case p{ color:var(--mist); }
+.case p b{ color:var(--spray); font-weight:600; }
+.case ul{ margin:14px 0 0 20px; color:var(--mist); }
+.case li{ margin-top:8px; }
+.case li b{ color:var(--spray); font-weight:600; }
+
+/* ---- the citable fact block ------------------------------------------
+   A short, self-contained, specific passage an AI assistant can lift whole
+   without losing the caveat that belongs with it. */
+.fact{ background:#0d1626; border:1px solid var(--border); border-left:4px solid var(--frost);
+  border-radius:0 10px 10px 0; padding:24px 28px; margin-top:28px; }
+.fact .q{ font-family:'Montserrat',Arial,sans-serif; font-weight:600; font-size:15px;
+  color:var(--frost); letter-spacing:.4px; }
+.fact .a{ margin-top:10px; color:var(--spray); font-size:17.5px; line-height:1.6; }
+.fact .src{ margin-top:12px; font-size:13.5px; color:var(--steel-lt); }
+
+/* ---- prose ------------------------------------------------------------ */
+.prose{ max-width:720px; }
+.prose p{ margin-top:18px; color:var(--mist); font-size:17.5px; }
+.prose p b{ color:var(--spray); font-weight:600; }
+.prose h2{ font-size:26px; margin-top:44px; }
+.prose h3{ font-family:'Montserrat',Arial,sans-serif; font-size:19px; color:#fff; margin-top:32px; }
+.prose ul{ margin:16px 0 0 22px; color:var(--mist); }
+.prose li{ margin-top:10px; }
+.prose li b{ color:var(--spray); font-weight:600; }
+.meta{ font-size:14px; color:var(--steel-lt); margin-top:14px; }
+
+/* ---- index listings --------------------------------------------------- */
+.list{ display:grid; gap:18px; margin-top:36px; }
+.item{ background:var(--deep); border:1px solid var(--border); border-radius:10px;
+  padding:26px 28px; display:block; }
+.item:hover{ border-color:var(--electric); text-decoration:none; }
+.item h3{ font-size:21px; color:#fff; font-weight:700; }
+.item p{ margin-top:10px; color:var(--mist); font-size:16px; }
+.item .tag{ font-size:12.5px; letter-spacing:1.6px; text-transform:uppercase;
+  color:var(--frost); font-family:'Montserrat',Arial,sans-serif; font-weight:600; }
+
+/* ---- about / contact -------------------------------------------------- */
+.about{ display:grid; grid-template-columns:1fr; gap:36px; margin-top:32px; align-items:start; }
+@media (min-width:800px){ .about{ grid-template-columns:1.4fr 1fr; } }
+.about p{ color:var(--mist); margin-top:14px; }
+.about p b{ color:var(--spray); font-weight:600; }
+.facts{ background:var(--deep); border:1px solid var(--border); border-radius:10px; padding:24px 28px; }
+.facts dt{ font-family:'Montserrat', Arial, sans-serif; font-weight:600; font-size:12px;
+  letter-spacing:2px; color:var(--frost); text-transform:uppercase; margin-top:16px; }
+.facts dt:first-child{ margin-top:0; }
+.facts dd{ color:var(--spray); margin-top:4px; }
+.contact .big{ font-family:'Montserrat', Arial, sans-serif; font-weight:700;
+  font-size:clamp(22px, 3vw, 32px); color:#fff; margin-top:24px; }
+.contact .big a{ color:var(--frost); }
+.contact .lines{ margin-top:18px; color:var(--mist); line-height:1.8; }
+.contact .lines b{ color:var(--spray); font-weight:600; }
+
+/* ---- next steps + footer ---------------------------------------------- */
+.next{ border-top:1px solid var(--border); padding:56px 0; }
+.next .grid{ margin-top:26px; }
+footer{ border-top:1px solid var(--border); padding:28px 0 40px; font-size:13.5px; color:var(--steel-lt); }
+footer b{ color:var(--mist); font-weight:600; }
+footer .wrap{ display:flex; flex-wrap:wrap; gap:8px 28px; justify-content:space-between; }
+footer nav{ position:static; background:none; border:none; backdrop-filter:none; }
+footer .ftnav{ display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:10px; }
+footer .ftnav a{ color:var(--mist); }

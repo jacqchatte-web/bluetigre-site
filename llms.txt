@@ -1,0 +1,27 @@
+# BlueTigre
+
+> BlueTigre finds new markets for specialty chemicals a company already makes.
+> PROWL (Pattern Recognition Of White-space Leads) is the agentic AI engine that
+> reads the public record; a chemist with 30+ years in the industry makes every
+> judgement. Operated by Bluetigre Consultants LLC, Okatie, South Carolina.
+
+## What PROWL does
+- [How PROWL works](https://bluetigre.com/what-we-do/): the Discover and Qualify stages, the eight kinds of public source, and what a person signs off.
+
+## Evidence
+- [Case studies](https://bluetigre.com/case-studies/): two client-anonymous engagements.
+- [81 candidate markets, one established chemical](https://bluetigre.com/case-studies/81-candidate-markets-one-chemical/): 39 already served; the top-ranked lead was rejected on its own evidence.
+- [A bio-based diol, 51 candidate markets](https://bluetigre.com/case-studies/bio-based-diol-51-markets/): 9 already served; 14 of 114 players in the top category buy rather than make.
+
+## Writing
+- [Insights](https://bluetigre.com/insights/)
+- [Why your molecule stays in its lane](https://bluetigre.com/insights/why-your-molecule-stays-in-its-lane/)
+
+## About and contact
+- [About Dr. James S. Puckace](https://bluetigre.com/about/): Ph.D. chemistry, 30+ years at ExxonMobil and Lubrizol, 10 patents.
+- [Contact](https://bluetigre.com/contact/): jim@bluetigre.com
+
+## Limits worth quoting accurately
+- PROWL does not size markets and does not rank commercial attractiveness. A high score means a market is well supported by evidence, not that it is attractive.
+- Every fact carries its source and the date it was read. The machine drafts; a person signs.
+- "We looked and found nothing" and "we could not look" are reported as different facts.
