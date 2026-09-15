@@ -164,3 +164,17 @@ footer .wrap{ display:flex; flex-wrap:wrap; gap:8px 28px; justify-content:space-
 footer nav{ position:static; background:none; border:none; backdrop-filter:none; }
 footer .ftnav{ display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:10px; }
 footer .ftnav a{ color:var(--mist); }
+
+/* ---- hero proof strip ------------------------------------------------- */
+.proof{ display:grid; grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:18px 30px; margin-top:44px; padding-top:26px;
+  border-top:1px solid var(--border); max-width:660px; }
+.proof div{ display:flex; flex-direction:column; }
+.proof b{ font-family:'Montserrat',Arial,sans-serif; font-weight:700;
+  font-size:30px; line-height:1; color:var(--frost); }
+.proof span{ font-size:13.5px; color:var(--mist); margin-top:6px; max-width:190px; }
+@media (max-width:640px){
+  .proof{ grid-template-columns:1fr 1fr; gap:16px 22px; margin-top:32px; }
+  .proof div:last-child{ grid-column:1 / -1; }
+  .proof b{ font-size:25px; }
+}
