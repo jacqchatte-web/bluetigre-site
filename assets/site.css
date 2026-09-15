@@ -178,3 +178,29 @@ footer .ftnav a{ color:var(--mist); }
   .proof div:last-child{ grid-column:1 / -1; }
   .proof b{ font-size:25px; }
 }
+
+/* ---- the P&L comparison, after the deck's slide 2 --------------------- */
+.pl{ width:100%; border-collapse:collapse; margin-top:34px; }
+.pl th{ text-align:left; font-family:'Montserrat',Arial,sans-serif; font-weight:600;
+  font-size:13px; letter-spacing:2.5px; text-transform:uppercase; padding-bottom:14px; }
+.pl th.today{ color:var(--mist); }
+.pl th.moves{ color:var(--frost); }
+.pl td{ padding:15px 0; border-top:1px solid var(--border); vertical-align:top; font-size:17px; }
+.pl td.today{ color:var(--mist); padding-right:18px; }
+.pl td.arrow{ color:var(--frost); width:44px; text-align:center; font-size:18px; }
+.pl td.moves{ color:var(--spray); font-weight:600; }
+.pl-closing{ margin-top:26px; font-style:italic; font-size:18px; color:var(--frost); }
+@media (max-width:640px){
+  .pl, .pl tbody, .pl tr, .pl td{ display:block; width:100%; }
+  .pl thead{ display:none; }
+  .pl tr{ border-top:1px solid var(--border); padding:14px 0; }
+  .pl td{ border-top:none; padding:0; }
+  .pl td.today{ font-size:15.5px; padding-right:0; }
+  .pl td.arrow{ display:none; }
+  .pl td.moves{ margin-top:5px; font-size:16.5px; }
+  .pl td.moves::before{ content:'\203A  '; color:var(--frost); font-weight:400; }
+}
+
+/* four items read as 2x2, not 3+1 */
+.grid.quad{ grid-template-columns:1fr; }
+@media (min-width:820px){ .grid.quad{ grid-template-columns:repeat(2, 1fr); } }
