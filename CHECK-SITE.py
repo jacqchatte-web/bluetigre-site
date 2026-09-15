@@ -11,7 +11,8 @@ A check that cannot fail the build is a note, not a gate.
 import os, re, json, glob, sys
 
 BASE = "https://bluetigre.com"
-NDA_TERMS = ("diol", "polyester plasticizer", "bdo")   # the engagement under NDA
+NDA_TERMS = ("diol", "polyester plasticizer", "bdo",   # the engagement under NDA
+             "refrigerat")                            # a client's own product line
 PUBLIC_EMAIL, WORK_EMAIL = "info@bluetigre.com", "jim@bluetigre.com"
 
 def main():
