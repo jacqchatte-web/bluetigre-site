@@ -126,18 +126,18 @@
         },
         {
           "@type": "Question",
-          "name": "What makes a finding count as knowledge?",
+          "name": "What has to be true before you write something down?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A named source, without exception - a finding with no source is not recorded at all. A caveat stating the honest limit, printed beside the finding rather than in a footnote. And a status: current, replaced by a later finding, or waiting on an answer only the client can give."
+            "text": "Three things. Where it came from - if we cannot point at the document, we do not write the claim down at all. What it does not prove, written next to it rather than in a footnote at the back. And where it stands: still current, replaced by something later, or waiting on an answer only the client can give."
           }
         },
         {
           "@type": "Question",
-          "name": "Can the system use its own conclusions as evidence?",
+          "name": "Can PROWL use its own conclusions as evidence?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, and that is enforced rather than intended. Conclusions a person has signed off are never fed back into searching or scoring, because a tool that treats its own conclusions as evidence will corroborate itself. A check fails the build if any part of the discovery code can read them."
+            "text": "No, and this is wired in rather than just intended. Conclusions a person has signed off are never fed back into the searching or the scoring, because a tool that treats its own conclusions as evidence ends up agreeing with itself. An automatic check refuses to let the work go ahead if the searching side can reach those conclusions at all."
           }
         }
       ]
@@ -199,13 +199,13 @@
 <section>
   <div class="wrap">
     <div class="kicker">What makes it count</div>
-    <h2>Three things every entry carries, or it is not recorded.</h2>
+    <h2>Three things go down with every finding, or it does not go down at all.</h2>
     <div class="grid three">
-      <div class="card"><h3>A named source</h3><p>Without exception. A finding with nowhere to trace it back to is not written down at all — it does not get recorded as a weaker fact, it simply does not enter.</p></div>
-      <div class="card"><h3>Its honest limit</h3><p>The caveat sits beside the finding, not in a footnote. What the evidence does not support is part of the finding rather than a disclaimer attached to it.</p></div>
-      <div class="card"><h3>A status you can see</h3><p>Current, replaced by something later, or <b>waiting on an answer only you can give</b>. Superseded entries are kept and linked to whatever replaced them, so you can see what changed and when.</p></div>
+      <div class="card"><h3>Where it came from</h3><p>Without exception. If we cannot point at the document a claim came from, we do not write the claim down — not as a weaker fact, not at all.</p></div>
+      <div class="card"><h3>What it does not prove</h3><p>Written next to the finding, not in a footnote at the back. What the evidence will not support is part of the finding itself, not a disclaimer bolted on afterwards.</p></div>
+      <div class="card"><h3>Where it stands</h3><p>Still current, replaced by something later, or <b>waiting on an answer only you can give</b>. When something is replaced, the old version is kept and linked to the new one, so you can see what changed and when.</p></div>
     </div>
-    <div class="fact"><div class="q">Why is &ldquo;waiting on a person&rdquo; a status of its own?</div><div class="a">Because rendering it as current would be a lie. Some questions can only be answered by the client — what a contract permits, what a plant can actually run. Those sit visibly as waiting, naming what is needed and who must supply it, rather than quietly appearing alongside settled findings.</div><div class="src">The same instinct as recording a search that found nothing differently from one that could not run.</div></div>
+    <div class="fact"><div class="q">What happens when only you can answer a question?</div><div class="a">It says so, in plain sight. Some things only you know — what a contract lets you do, what your plant can actually run. Those are set aside and marked as waiting for you, with the question written out and who it is for. They never sit among the things we have established, because showing a question as though it were an answer is a lie.</div><div class="src">Same reason we record a search that found nothing differently from one that could not run at all.</div></div>
   </div>
 </section>
 
@@ -215,7 +215,7 @@
     <h2>The knowledge never feeds back into the searching.</h2>
     <p class="intro">This is the rule that keeps the record worth having. A conclusion a person has signed off is <b>never used as evidence for the next search or the next score</b>. If it were, the tool would start corroborating itself: its own earlier judgement would come back looking like independent support, and the second study would agree with the first for no reason other than that the first happened.</p>
     <div class="case">
-      <p><b>It is enforced, not intended.</b> A check reads the searching and scoring code and fails the build if any part of it can reach the conclusions at all. The separation cannot be crossed by accident, or by someone who did not know the rule.</p>
+      <p><b>This is wired in, not just intended.</b> An automatic check refuses to let the work go ahead if the searching side can reach the conclusions at all. Nobody can cross that line by accident, or by not knowing the rule was there.</p>
     </div>
   </div>
 </section>

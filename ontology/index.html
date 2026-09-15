@@ -112,7 +112,7 @@
           "name": "What is a PROWL ontology?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A map of applications written in your company's own vocabulary, used to group documented uses into markets. It runs in three layers: a shared layer of canonical market names, a per-material layer covering what a given substance is and the false friends that look like it, and a per-client layer holding how your company says things - your segment names, your words for what you already sell, your brands and divisions."
+            "text": "A map of applications written in your company's own words, used to group what a chemical is documented as doing into markets you would recognise. It is built in three layers: one shared map of market names, one covering what a particular substance is and the near-identical names that would otherwise pollute the results, and one holding how your company says things - your segment names, your words for what you already sell, your brands and divisions."
           }
         },
         {
@@ -125,18 +125,18 @@
         },
         {
           "@type": "Question",
-          "name": "Can a client's own systems and data be connected?",
+          "name": "Can you bring in our own systems and data?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, as engineering work done for that engagement. The vocabulary, the list of what you already sell, the exclusions and the brand and division names are configuration - they live in a versioned file and changing them does not touch the engine. Connecting an internal product database, document store or subscription feed is a code change made for that client. There is no self-service connector today."
+            "text": "Yes, and it is real work done for your engagement rather than a switch. Your vocabulary, the list of what you already sell, your exclusions and your brand and division names are settings - changing one is quick and does not touch how the engine works. Connecting an internal product database, a document store or a subscription you already pay for is something we build for you. There is nothing you can plug in yourself today, and saying otherwise would be an overclaim."
           }
         },
         {
           "@type": "Question",
-          "name": "Is the ontology versioned?",
+          "name": "Can we see what changed, and who decided it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Every change is proposed, reviewed against the evidence and logged with a date and with whose decision it was. Every entry also carries where the wording came from, so nothing is applied blind."
+            "text": "Yes. Every change is proposed, checked against the evidence by a person, and written down with the date and whose decision it was. Every entry also records where the wording came from, so nothing is ever applied blind."
           }
         }
       ]
@@ -170,14 +170,14 @@
 <section>
   <div class="wrap">
     <div class="kicker">Three layers</div>
-    <h2>Shared, per-material, and yours.</h2>
-    <p class="intro">Each company has its own way of saying and doing things, so the vocabulary is built in layers rather than as one dictionary. Your layer sits on top, and <b>where it disagrees with the shared one, yours wins</b> — and the record says that it overrode it.</p>
+    <h2>One shared, one for the substance, and one that is yours.</h2>
+    <p class="intro">Each company has its own way of saying and doing things, so the vocabulary is built in layers rather than as one dictionary. Your layer sits on top, and <b>where it disagrees with the shared one, yours wins</b> — and it is written down that yours replaced it.</p>
     <div class="grid three">
-      <div class="card"><h3><small>Layer 1</small>Shared</h3><p>The universal vocabulary of application domains and canonical market names. Written once, applied to every study.</p></div>
-      <div class="card"><h3><small>Layer 2</small>Per-material</h3><p>Who this chemical <b>is</b>: its search terms, and the false friends — the near-identical names that would otherwise pollute every result.</p></div>
-      <div class="card"><h3><small>Layer 3</small>Yours</h3><p>How your company says things: your segment names mapped onto canonical markets, your own words for what you already sell, your brands and divisions, and the false friends that only bite in your context.</p></div>
+      <div class="card"><h3><small>Layer 1</small>Shared</h3><p>One shared map of market names, covering the industries any chemical might serve. Written once, used on every study.</p></div>
+      <div class="card"><h3><small>Layer 2</small>The substance itself</h3><p>Who this chemical <b>is</b>: its search terms, and the false friends — the near-identical names that would otherwise pollute every result.</p></div>
+      <div class="card"><h3><small>Layer 3</small>Yours</h3><p>How your company says things: your segment names matched to the shared market names, your own words for what you already sell, your brands and divisions, and the false friends that only bite in your context.</p></div>
     </div>
-    <div class="fact"><div class="q">Why can't one vocabulary serve every company?</div><div class="a">Because a company&rsquo;s segment labels say where its catalogue files a product, and a chemical vocabulary says what the substance does. Map a producer&rsquo;s own shelf labels onto a board of candidate markets and they may subtract almost nothing, not because the list is wrong but because the two vocabularies describe different things. One client&rsquo;s shelf label is also meaningless to the next, which is why your layer lives in your own file and never in the shared one.</div><div class="src">The per-client layer was added on 27 August 2026, after exactly that happened.</div></div>
+    <div class="fact"><div class="q">Why can't one vocabulary serve every company?</div><div class="a">Because a company&rsquo;s segment labels say where its catalogue files a product, and a chemical vocabulary says what the substance does. Map a producer&rsquo;s own shelf labels onto a board of candidate markets and they may subtract almost nothing, not because the list is wrong but because the two vocabularies describe different things. One client&rsquo;s shelf label is also meaningless to the next, which is why your layer lives in your own file and never in the shared one.</div><div class="src">Your own layer was added to the system on 27 August 2026, after exactly that happened.</div></div>
   </div>
 </section>
 
@@ -188,25 +188,25 @@
     <p class="intro">The public record is the starting point, not the boundary. An engagement can bring in your own material — an internal product database, a document store, a subscription feed you already pay for — so that the exploration runs against what your company knows as well as what the world publishes.</p>
     <div class="grid two">
       <div class="card">
-        <h3>What is configuration</h3>
-        <p>Your vocabulary, the list of what you already sell, your exclusions, your brands and divisions. These live in a versioned file. Changing them does not touch the engine, and every entry records where the wording came from, so <b>nothing is applied blind</b>.</p>
+        <h3>What we set up for you</h3>
+        <p>Your vocabulary, the list of what you already sell, your exclusions, your brands and divisions. These are settings. Changing one is quick, it does not touch how the engine works, and every entry records where the wording came from — so <b>nothing is applied blind</b>.</p>
       </div>
       <div class="card">
-        <h3>What is engineering</h3>
-        <p>Connecting your own systems, and adjusting the code to fit how your company actually works. That is <b>real work done for your engagement</b>, not a switch. It is also why the second chemistry is cheaper than the first — the fitting is done once.</p>
+        <h3>What we build for you</h3>
+        <p>Connecting your own systems, and adjusting how the engine runs to fit the way your company works. That is <b>real work done for your engagement</b>, not a switch. It is also why the second chemistry is cheaper than the first — the fitting is done once.</p>
       </div>
     </div>
     <div class="case">
-      <p><b>What that is not, today.</b> There is no self-service connector you configure yourself, and PROWL does not read your systems without you deciding what it may see. Saying otherwise would be an overclaim, and the honesty is the point — <b>a finding you cannot check is a finding you should not act on</b>, and that applies to claims about the engine as much as to claims about a market.</p>
+      <p><b>What that is not, today.</b> There is nothing you can plug in yourself today, and PROWL does not read your systems without you deciding what it may see. Saying otherwise would be an overclaim, and the honesty is the point — <b>a finding you cannot check is a finding you should not act on</b>, and that applies to claims about the engine as much as to claims about a market.</p>
     </div>
-    <div class="fact"><div class="q">Is my data used to train an AI model?</div><div class="a">No. Nothing here trains or fine-tunes a model on your data, and there is no such step in the system. What accumulates is the context the engine works from — your vocabulary, what you already sell, your exclusions and your evidence — held in your own files. Nothing you tell us is absorbed into model weights, which is why deleting your file genuinely deletes it.</div><div class="src">What you keep is a library and a fitted configuration you own, not a share in somebody else&rsquo;s model.</div></div>
+    <div class="fact"><div class="q">Is my data used to train an AI model?</div><div class="a">No. Nothing here trains or fine-tunes a model on your data, and there is no such step in the system. What accumulates is the context the engine works from — your vocabulary, what you already sell, your exclusions and your evidence — held in your own files. Nothing you tell us is absorbed into model weights, which is why deleting your file genuinely deletes it.</div><div class="src">What you keep is a library and a set-up of your own, not a share in somebody else&rsquo;s model.</div></div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <div class="kicker">How it is governed</div>
-    <h2>Versioned, reviewed, and logged with whose decision it was.</h2>
+    <h2>Every change is checked by a person, and written down.</h2>
     <p class="intro">A vocabulary anyone can quietly edit is worth nothing, because you can never tell whether a result changed for a good reason. So every change is <b>proposed, reviewed against the evidence, and logged with a date</b>.</p>
     <div class="grid three">
       <div class="card"><h3>Proposed</h3><p>A change is suggested, with the evidence that prompted it attached.</p></div>
