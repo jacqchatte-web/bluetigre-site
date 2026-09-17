@@ -6,7 +6,7 @@
 > judgement. Operated by Bluetigre Consultants LLC, Okatie, South Carolina.
 
 ## What PROWL does
-- [How PROWL works](https://bluetigre.com/what-we-do/): the Discover and Qualify stages, the eight kinds of public source, and what a person signs off.
+- [How PROWL works](https://bluetigre.com/what-we-do/): the Discover and Qualify stages, the 8 kinds of public source, and what a person signs off.
 - [Adjacent growth, accelerated and sustained](https://bluetigre.com/adjacent-growth/): why adjacent-market work is normally done properly once and then never again, who in a company could actually do it, and what changes on the P&L when it runs as a cadence - top-line growth from existing products, improved ROCE from existing plant, growth with no new capital.
 - [The ontology](https://bluetigre.com/ontology/): the governed, versioned map of applications in the client's own vocabulary that lets served markets be subtracted and makes the second chemistry easier than the first.
 
