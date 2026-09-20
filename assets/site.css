@@ -31,6 +31,11 @@ nav ul{ list-style:none; display:flex; gap:26px; }
 nav ul a{ color:var(--mist); font-size:15px; font-weight:600; }
 nav ul a:hover{ color:var(--frost); text-decoration:none; }
 nav ul a[aria-current="page"]{ color:var(--frost); }
+/* The client door, set apart from the pages anyone may read. It leaves the
+   site: a client signs in on the reports server, and no client is named. */
+nav ul li.login a{ border:1px solid var(--steel); border-radius:6px;
+  padding:6px 12px; color:var(--frost); }
+nav ul li.login a:hover{ border-color:var(--frost); background:var(--deep); }
 /* Phones used to get NO navigation at all - the link list was hidden and
    nothing replaced it. Now it wraps onto a second row instead. */
 @media (max-width:760px){
@@ -39,6 +44,7 @@ nav ul a[aria-current="page"]{ color:var(--frost); }
   nav ul{ width:100%; flex-wrap:wrap; gap:0 20px; padding:6px 0 8px;
     border-top:1px solid var(--border); margin-top:8px; }
   nav ul a{ display:block; padding:8px 0; font-size:15px; }
+  nav ul li.login a{ display:inline-block; padding:6px 12px; margin:4px 0; }
 }
 
 /* ---- hero ------------------------------------------------------------- */
