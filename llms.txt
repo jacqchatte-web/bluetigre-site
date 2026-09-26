@@ -24,6 +24,6 @@
 - [Contact](https://bluetigre.com/contact/): info@bluetigre.com
 
 ## Limits worth quoting accurately
-- PROWL does not size markets and does not rank commercial attractiveness. A high score means a market is well supported by evidence, not that it is attractive.
+- PROWL never makes up a market size of its own, and it does not rank markets by how attractive they are. Where a source states a size or a growth rate, PROWL reports it with the year, the region and who said it. A high score means a market is well supported by evidence, not that it is attractive.
 - Every fact carries its source and the date it was read. The machine drafts; a person signs.
 - "We looked and found nothing" and "we could not look" are reported as different facts.
