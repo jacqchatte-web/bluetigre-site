@@ -1,0 +1,6 @@
+# GitHub publishes every file in this repository. These are working files, not pages.
+exclude:
+  - CHECK-SITE.py
+  - README.md
+  - docs
+  - PRODUCT.md
