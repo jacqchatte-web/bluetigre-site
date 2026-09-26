@@ -185,6 +185,11 @@ footer .ftnav a{ color:var(--mist); }
   .proof b{ font-size:25px; }
 }
 
+/* ---- the limits line: the honesty is the differentiator, so it sits with the claims */
+.limits{ margin:22px 0 0; max-width:660px; font-size:14px; line-height:1.55;
+  color:var(--mist); padding-left:14px; border-left:2px solid var(--steel-lt); }
+.limits b{ color:var(--spray); font-weight:600; }
+
 /* ---- the P&L comparison, after the deck's slide 2 --------------------- */
 .pl{ width:100%; border-collapse:collapse; margin-top:34px; }
 .pl th{ text-align:left; font-family:'Montserrat',Arial,sans-serif; font-weight:600;
